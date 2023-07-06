@@ -1,0 +1,38 @@
+.bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .title {
+        display: flex;
+        align-items: center;
+        
+        h1 {
+            color: hsl(224, 21%, 14%);
+        }
+
+        .notif {
+            background-color: hsl(219, 85%, 26%);
+            color: hsl(0, 0%, 100%);
+            margin: 10px;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            padding: 2px 10px;
+        }
+    }
+
+    .read:hover {
+        cursor: pointer;
+        color: hsl(219, 85%, 26%);
+    }
+}
+
+@media(max-width: 375px) {
+    .bar {
+        .title {
+            h1 {
+                font-size: 1.35rem;
+            }
+        }
+    }
+}

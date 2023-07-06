@@ -1,0 +1,11 @@
+.message {
+    border: 1px solid hsl(219, 14%, 63%);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.message:hover {
+    cursor: pointer;
+    background-color: hsl(210, 60%, 90%);
+}

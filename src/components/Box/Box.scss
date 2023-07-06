@@ -1,0 +1,84 @@
+.box-container {
+    border-radius: 5px;
+    &.unread {
+        background-color: hsl(210, 60%, 98%);
+    }
+    .box {
+        display: flex;
+        // align-items: center;
+        margin: 10px;
+        padding: 10px;
+
+        .inner{
+            width: 36rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            img {
+                margin: 0;
+                justify-self: end;
+            }
+            img:hover {
+                cursor: pointer;
+            }
+        }
+    
+        p {
+            margin: 0;
+            padding: 0;
+        }
+        img {
+            width: 2.5rem;
+            height: 2.5rem;
+            margin-right: 15px;
+        }
+        .name {
+            color: hsl(224, 21%, 14%);
+            font-weight: bold;
+        }
+        .name:hover {
+            cursor: pointer;
+            color: hsl(219, 85%, 26%);
+        }
+        .group {
+            color: hsl(219, 85%, 26%);
+            font-weight: bold;
+        }
+        .group:hover {
+            cursor: pointer;
+        }
+        .post {
+            color: hsl(219, 14%, 63%);
+            font-weight: bold;
+        }
+        .post:hover {
+            cursor: pointer;
+            color: hsl(219, 85%, 26%);
+        }
+        .status {
+            background-color: hsl(1, 90%, 64%);
+            display: inline-block;
+            margin: 0 5px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+    }
+}
+
+@media(max-width: 375px) {
+    .box-container {
+        .box {
+            margin: 10px 0;
+            padding: 10px;
+            .inner {
+                width: 16rem;
+                img {
+                    margin: 0;
+                    justify-self: start;
+                }
+            }
+        }
+    }
+}
